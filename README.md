@@ -13,9 +13,9 @@ cd nsc/
 ```
 then there are multiple options for building NSC
 
-- build
-- build & test
-- install
+- [Build](#build)
+- [Build & Test](#build--test)
+- [Install](#install)
 
 ### Build
 To build simply run
