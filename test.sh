@@ -1,10 +1,11 @@
+echo "1"
 NSCOUT=$(./nsc test1.n.c -o test)
 echo $NSCOUT | grep 'exit 1$'
 NSCYEA=$?
-OUT=$(./nsc test2.n.c -o test)
+NSCOUT=$(./nsc test2.n.c -o test)
 echo $NSCOUT | grep 'exit 1$'
 NSCYEB=$?
-OUT=$(./nsc test3.n.c -o test)
+NSCOUT=$(./nsc test3.n.c -o test)
 echo $NSCOUT | grep 'exit 1$'
 NSCYEC=$?
 if [ $NSCYEA -eq 0 ] && [ $NSCYEB -eq 0 ] && [ $NSCYEC -ne 0 ]; then

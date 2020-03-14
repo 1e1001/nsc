@@ -3,5 +3,5 @@
 
 // success
 int main(void) {
-  if(printf("It can build\n%s\n", getenv("NSC")) || 1) {}
+  if(printf("It can build\n") || 1) {}
 }

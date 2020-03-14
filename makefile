@@ -10,7 +10,7 @@ else
 	rm ma.h
 endif
 
-debug: build
+test: build
 	bash test.sh
 	rm test
 
