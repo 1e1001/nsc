@@ -1,6 +1,9 @@
-# NSC
+NSC is a pre-processor to make your semicolon key last longer
 
-Compiler to make your semicolon key last longer
+## Informational Video
+[![Watch it](https://img.youtube.com/vi/FsDmwSpFtH8/maxresdefault.jpg)](https://youtu.be/FsDmwSpFtH8)
+
+
 
 ## Usage
 
