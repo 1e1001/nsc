@@ -2,8 +2,6 @@
 
 Compiler to make your semicolon key last longer
 
-### Video coming soon
-
 ## Usage
 
 To use NSC simply run the `nsc` command with the parameters of your normal C compiler, any file with a `.n.c` file extension will be processed for semicolons.

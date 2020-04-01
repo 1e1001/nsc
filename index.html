@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NSC</title>
+</head>
+<body>
+  <h1>NSC</h1>
+
+  <p>Compiler to make your semicolon key last longer</p>
+
+  <h2>Usage</h2>
+
+  <p>To use NSC simply run the <kbd>nsc</kbd> command with the parameters of your normal C compiler, any file with a <kbd>.n.c</kbd> file extension will be processed for semicolons.</p>
+
+  <h2>Install instructions</h2>
+
+  <p>First clone the repo and cd into it</p>
+  <code>
+  git clone https://github.com/RedMikePumpkin/nsc.git
+  cd nsc/
+  </code>
+  <p>then there are multiple options for building NSC</p>
+  <ul>
+    <li><a href="#build">Build</a></li>
+    <li><a href="#build-test">Build & Test</a></li>
+    <li><a href="#install">Install</a></li>
+  </ul>
+
+  <h3 id="build">Build</h3>
+  <p>To build simply run</p>
+  <code>
+  make build
+  </code>
+  <p>or simply</p>
+  <code>
+  make
+  </code>
+  <p>if you want to specify a specific C compiler to use (e.g. a different version of <kbd>gcc</kbd>, or <kbd>clang</kbd>, etc.), just use</p>
+  <code>
+  make build CMP=clang
+  </code>
+  <p>or something. It will make a file called "nsc"</p>
+
+  <h3 id="build-test">Build & Test</h3>
+  <p>Use</p>
+  <code>
+  make test
+  </code>
+  <p>once again, using something like</p>
+  <code>
+  make test CMP=gcc-9
+  </code>
+  <p>also works, it will print</p>
+  <code>
+  Test Successful!
+  </code>
+  <p>in green if it passes the tests (note that there should be a compiler error and a "semicolon" error).</p>
+
+  <p> again it will create a file called "nsc" in the repo directory</p>
+
+  <h3 id="install">Install</h3>
+  <p>Use</p>
+  <code>
+  sudo make install
+  </code>
+  <p>Note that you will need to use <kbd>sudo</kbd> for the default install location (or any location you need root perms to write to)</p>
+  <p>There are a few extra flags that also work, the first is <kbd>LOC</kbd>, which you can use to specify the install location, such as</p>
+  <code>
+  sudo make install LOC=/usr/bin/nsc2
+  </code>
+  <p><kbd>LOC</kbd> defaults to <kbd>/usr/bin/nsc</kbd>.</p>
+
+  <p>If a file already exists in <kbd>LOC</kbd> then it will give an error, you can use <kbd>OVR=1</kbd> to force overriding the file.</p>
+
+</body>
+</html>
