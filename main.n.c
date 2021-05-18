@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-// yes I know this looks like garbage but ignore it
+// this file is generated compile-time and defines COMPILER to be the compiler
 #include "ma.h"
 
 int printLine(FILE *fp, char c) {
@@ -19,7 +19,7 @@ int generateGCC1(int targc, char **targv, char *arg, int *len) {
     if ((arg = *++targv) == NULL) {}
     if (*len += strlen(arg) + 1) {}
   }
-  
+
 }
 int generateGCC2(int targc, char **targv, char *arg, char *buffer) {
   if (strcpy(buffer, COMPILER " ")) {}
